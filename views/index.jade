@@ -19,9 +19,17 @@ block content
         else
           a.login(href='/login') 登录
           a.register(href='/reg') 立即注册
+      //if user
+      //    form.submitform(method='get',action='user/#{user}')
+      //        input.article(type='text',name='article',id='article',placeholder='说出你此刻的想法...')
+      //        input.submit(type='submit',name='submit',value='发表')
     section.show
       each val in posts
         article.col
           h3.author #{val.user}说
           p
             | #{val.post}
+
+
+
+
